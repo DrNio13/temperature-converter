@@ -1,0 +1,103 @@
+body , h1, h2, h3, h4, p, span {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: white;
+}
+
+h3.heading {
+	color: white;
+}
+
+.header {
+	background: rgb(9, 80, 107);
+}
+
+.ion-android-menu{
+	color: white;
+    font-size: 24px;
+}
+
+.hamburger-menu {
+	background: transparent;
+	border: 0;
+}
+
+input.basic-input[type="number"] {
+	border: 1px solid #BFBABA;
+	padding-left: 20px;
+	border-radius: 30px;
+}
+
+.result {
+	padding-left: 20px;
+}
+
+.main-list {
+	text-align: center;
+}
+
+.primary-btn {
+	display: block;
+	width: 180px;
+	background: rgba(95,143,165,0.2);
+	border: 1px solid darkgrey;
+	margin: 20px auto;
+	line-height: 40px;
+	border-radius: 30px;
+	color: white;
+	font-size: 15px;
+}
+
+.bar {
+	border: 0;
+}
+
+.main-body {
+	height: 100vh;
+	background: url(http://www.freelargeimages.com/wp-content/uploads/2015/04/Blurry_Wallpaper_09.jpg) 70% 45% no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.main-body form {
+	min-height: 150px;
+}
+
+.main-body form {
+	min-height: 150px;
+}
+
+.user-input {
+	background: transparent;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #2C86C5;
+    width: 65px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px;
+}
+
+.back-button {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    font-size: 33px;
+    background: transparent;
+    border: 0;
+}
+
+.main-menu {
+    background: #073648;
+    border: 0;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    z-index: 10;
+    height: 100vh;
+    /*width: 30vh;*/
+}

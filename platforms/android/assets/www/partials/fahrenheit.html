@@ -1,0 +1,10 @@
+<div class="main-body" ng-controller="FahrenheitController">
+	<form name="FahrenheitForm">
+		<h3>Fahrenheit</h3>
+		
+		<input class="user-input" name="fahrenheit" ng-model="fahrenheit" placeholder="e.g. 45"/>
+
+		<p ng-hide="noValue">{{ celsius() }} <span ng-bind-html="unit"></span></p>
+		<p ng-hide="noValue">{{ kelvin() }} <span ng-bind-html="unit"></span></p>
+	</form>
+</div>

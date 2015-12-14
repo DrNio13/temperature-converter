@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="starter">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Weather Converter</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,300italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    
+    <script src="node_modules/angular-route/angular-route.min.js" type="text/javascript"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+  </head>
+  <body ng-app="starter" class="platform-android platform-cordova platform-webview">
+
+    <ion-pane ng-controller="TemperatureController">
+
+      <section class="hamburger-menu">
+        <ul>
+          <li><a href="#/useful-links">Useful links</a></li>
+          <li><a href="mailto:vandergeorge@hotmail.com?subject=TemperatureConverter" "email me">Contact Us</a> </li>
+        </ul>
+      </section>
+      
+      <!-- header -->
+      <ion-header-bar class="header">
+
+        <button class="hamburger-menu" ng-click="toggleMenu()">
+          <span class="ion-android-menu"></span>
+        </button>
+
+        <button class="back-button" ng-show="redirectHome" ng-click="redirect('/home')">
+          <span class="ion-ios-arrow-thin-left"></span>
+        </button>
+
+      </ion-header-bar>
+
+      <!-- main app -->
+      <ion-content>
+
+          <section ng-view></section>
+
+      </ion-content>
+
+    </ion-pane>
+  </body>
+</html>
